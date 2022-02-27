@@ -60,11 +60,25 @@
     transform: none;
   }
 }
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 .fadeInRight {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
 }
 
 .fadeLeft{
-  
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;  
 }
